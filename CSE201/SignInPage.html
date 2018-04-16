@@ -2,13 +2,15 @@
 
 <html>
     
+    <!-- Change browser header -->
     <head>
         <meta charset="utf-8">
         <title>GameHub Login</title>
     </head>
   
+    <!-- Create header text and sign in boxes -->
     <body>
-        <div class="login">
+        <div class="signin">
             <h1>Enter your username and password</h1>
             <div class="textbox">
                 <input type="text" placeholder="Username" name="" value="">
@@ -24,22 +26,22 @@
     </body>
     
     <style>
-
+        /* Position of the page content */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
-
-        .login {
+        /* Specific position of the header text */
+        .signin {
             width: 250px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-125%);
         }
-
-        .login h1 {
+        /* Style the header text */
+        .signin h1 {
             float: left;
             top: 50%;
             left: 50%;
@@ -50,7 +52,7 @@
             padding: 13px 0;
             white-space: nowrap;
         }
-
+        /* Position of the sign in boxes */
         .textbox {
             width: 100%;
             overflow: hidden;
@@ -59,7 +61,7 @@
             margin: 8px 0;
             border-bottom: 1px solid;
         }
-        
+        /* Style the sign in boxes */
         .textbox input {
             border: none;
             outline: none;
@@ -69,7 +71,7 @@
             float: left;
             margin: 0 10px;
         }
-        
+        /* Style and position of the sign in button */
         .button {
             width: 100%;
             background: none;
