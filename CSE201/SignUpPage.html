@@ -1,5 +1,6 @@
 <html>
     
+    <!-- Change browser header and create header text  -->
     <div class="header">
         
     <head>
@@ -9,6 +10,7 @@
         
     </div>
     
+    <!-- Create user sign up input fields and sign up/cancel button -->
     <div class="container">
         
         <label for="email"><b>Email</b></label>
@@ -39,6 +41,7 @@
         
         * {box-sizing: border-box}
         
+        /* Position and style username, password, email, date input fields */
         input[type=text], input[type=password], input[type=email], input[type=date] {
             width: 100%;
             padding: 15px;
@@ -48,15 +51,18 @@
             background: #f1f1f1;
             }
         
+        /* Changes font inside date input field */
         input[type=date] {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
 
+        /* Changes color of the input field when clicked on */
         input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus {
             background-color: #ddd;
             outline: none;
             }
         
+        /* Position and style of the sign up/cancel buttons */
         button {
             background-color: #f1f1f1;
             color: black;
@@ -67,25 +73,30 @@
             opacity: 0.9;
         }
         
+        /* Changes opacity when hovering over buttons */
         button:hover {
-            opacity: 1;
+            opacity: .75;
         }
         
+        /* Chanegs the font in the input fields */
         b {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
         
+        /* Position of the page content */
         .container {
             padding-top: 16px;
             padding-left: 400px;
             padding-right: 400px;
         }
         
+        /* Position and font of the header text */
         .header {
             text-align: center;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
         
+        /* Position of the cancel/signup button */
         .cancel-button, .signup-button {
             float: none;
             width: 20%;
