@@ -13,28 +13,58 @@
     <!-- Create user sign up input fields and sign up/cancel button -->
     <div class="container">
         
-        <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Email" name="email" required>
-    
-        <label for="username"><b>Username</b></label>
-        <input type="text" placeholder="Desired Username" name="username" required>
-    
-        <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Password" name="password" required>
-    
-        <label for="confirm-password"><b>Confirm Password</b></label>
-        <input type="password" placeholder="Confirm Password" name="confirm-password" required>
-    
-        <label for="birthday"><b>Date of Birth (13+)</b></label>
-        <input type="date" name="birthday" min='1900-01-01' max='2005-04-09' required>
+        <!-- <form action="/our_database.php" target="_self"> -->
+
+        <form>
         
-        <div class="clearfix">
+            <div>
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" name="firstname" required>
+            </div>    
         
-            <button type="button" class="cancel-button">Cancel</button>
-            <button type="submit" class="signup-button">Sign Up</button>
+            <div>
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" placeholder="Last Name" name="lastname" required>
+            </div>
                 
-        </div>    
-        
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Desired Username" name="username" required>
+            </div>
+                
+            <div>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            
+            <div>
+                <label for="confirm-password"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+            </div>
+            
+            <div>
+                <label for="birthday"><b>Date of Birth (13+)</b></label>
+                <input type="date" name="birthday" min='1900-01-01' max='2005-04-09' required>
+            </div>
+            
+            <div>
+                <label for="Gender"><b>Gender</b></label>
+                <input type="radio" id="Male" name="Gender" value="Male"><label for="Male">Male</label>
+                <input type="radio" id="Female" name="Gender" value="Female"><label for="Female">Female</label>
+                <input type="radio" id="Other" name="Gender" value="Other"><label for="Other">Other</label>
+            </div>
+                
+            <div class="clearfix">
+                <br><button type="button" class="cancel-button">Cancel</button>
+                <button type="submit" class="signup-button">Sign Up</button> 
+            </div>
+            
+        </form>
     </div>
     
     <style>
@@ -78,7 +108,7 @@
             opacity: .75;
         }
         
-        /* Chanegs the font in the input fields */
+        /* Changes the font in the input fields */
         b {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
