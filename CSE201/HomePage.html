@@ -40,6 +40,7 @@
 			 background-color: #111;
 		}
 
+
 		.topnav button {
 		    float: right;
 		    padding: 6px;
@@ -52,19 +53,6 @@
 		    cursor: pointer;
 		}
 
-		.topnav button:hover {
-		    background: #0b7dda;
-		}
-
-		.topnav input[type=text] {
-			  float: right;
- 			  padding: 6px;
-			  margin-top: 8px;
-			margin-right: 16px;
-			  border: none;
-			  font-size: 17px;
-		}
-
 		@media screen and (max-width: 600px) {
 		 .topnav a, .topnav input[type=text] {
 			    float: none;
@@ -74,54 +62,52 @@
 			    margin: 0;
 			    padding: 14px;
 		  }
-		 .topnav input[type=text] {
- 			    border: 1px solid #ccc;  
-		 }
 		}
 
+		.search {
+		  width: 100%;
+		  position: relative
+		}
 
+		.search input {
+		  float: left;
+		  width: 85%;
+		  border: 3px solid #00B4CC;
+		  padding: 5px;
+		  height: 42px;
+		  border-radius: 5px;
+		  outline: none;
+		  color: #9DBFAF;
+		  margin-top: 8px;
+		  margin-bottom: 8px;
+		}
 
-//start code
-	
-        form{
+		.search input:focus{
+		  color: #00B4CC;
+		}
 
-	        	width:1000px;
+		.search button {
+		  float: left;
+		  width: 15%;
+		  height: 42px;
+		  border: 1px solid #00B4CC;
+		  background: #2196F3;
+		  text-align: center;
+		  color: #fff;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  font-size: 20px;
+		  margin-top: 8px;
+		  margin-bottom: 8px;
+		}
 
-	       		margin:auto;
-	
-        	margin-top:250px;
-	
-        }
+//image
 
-	        .search{
-	
-        	width:80%;
-        
-			padding:10px;
-		
-        font-size:20px;
-
-		        }
-		
-.submit{
-		
-        padding:10px;
-		
-        font-size:20px;
-		
-	background-color:#77ff77;
-		
-        }
-
-		.signUp{
-
-		
-	}
-
-
-		
 		div.img {
+		    margin: 5px;
 		    border: 1px solid #ccc;
+		    float: left;
+		    width: 180px;
 		}
 
 		div.img:hover {
@@ -129,8 +115,8 @@
 		}
 
 		div.img img {
-		    width: 100%;
-		    height: 256px;
+		    width: 80%;
+		    height: auto;
 		}
 
 		div.desc {
@@ -161,11 +147,11 @@
 		    }
 		}
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+		.clearfix:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
 	</style>
 
 
@@ -178,27 +164,32 @@
 		<div class="topnav">
 		  <a href="#home">Home</a>
 		  <a href="#about">About</a>
- 		  <a href="#notifications">Notifications</a>
+ 		  <a href="#notification">Notification</a>
 		  <a href="SignInPage.html">Sign In</a>
 		  <a href="SignUpPage.html">Sign Up</a>
-		  <button type="submit">Search</button>
- 		  <input type="text" placeholder="Search Here">
+		  <button type="submit">Sign in</button>
 		 </div>
+
+		 <div class="search">
+		     <input type="text" class="searchTerm" placeholder="Type your question here">
+ 		     <button type="submit" class="searchButton">Search</button>
+   		 </div>
+
+		<h3 style="text-align:left">Subsections</h2>
 
 		<div class="responsive">
   		 <div class="img">
-    		  <a target="_blank" href="PUBG.jpg">
-      		   <img src="http://media.comicbook.com/2017/09/pubg-vs-fornite-battle-royale-mode-1022703.jpg" alt="PUBattlegorunds" width="300" height="200">
+    		  <a href="SS_PUBG.html" href="PUBG.jpg">
+      		   <img src="http://media.comicbook.com/2017/09/pubg-vs-fornite-battle-royale-mode-1022703.jpg" alt="Trolltunga Norway" width="300" height="200">
     		  </a>
 		  <div class="desc">PlayerUnknown's Battlegrounds</div>
   		 </div>
 		</div>
 
-
 		<div class="responsive">
   		 <div class="img">
-		   <a target="_blank" href="OW.jpg">
-		     <img src="https://assets.vg247.com/current//2017/05/overwatch_anniversary_with_logo.jpg" alt="Overwatch" width="600" height="400">
+		   <a href="SS_OW.html" href="OW.jpg">
+		     <img src="https://assets.vg247.com/current//2017/05/overwatch_anniversary_with_logo.jpg" alt="Forest" width="600" height="400">
 		   </a>
 		   <div class="desc">Overwatch</div>
 		  </div>
@@ -206,8 +197,8 @@
 
 		<div class="responsive">
 		  <div class="img">
-		    <a target="_blank" href="MK.jpg">
-		      <img src="http://www.sinaimg.cn/dy/slidenews/21_img/2011_17/1604_344773_603096.jpg" alt="Mortal Kombat" width="600" height="400">
+		    <a href="SS_MK.html" href="MK.jpg">
+		      <img src="http://www.sinaimg.cn/dy/slidenews/21_img/2011_17/1604_344773_603096.jpg" alt="Northern Lights" width="600" height="400">
 		    </a>
 		    <div class="desc">Mortal Kombat</div>
 		  </div>
@@ -215,10 +206,10 @@
 
 		<div class="responsive">
 		  <div class="img">
-		    <a target="_blank" href="MC.jpg">
- 		     <img src="https://minecraft.net/static/pages/img/minecraft-hero-og.c5517b7973e1.jpg" alt="Minecraft" width="600" height="400">
+		    <a href="SS_LOL.html" href="LOL.jpg">
+ 		     <img src="https://dotesports-cdn-prod-tqgiyve.stackpathdns.com/thumbor/_Kbiab5ieD3xmsroY9mFrVyXBis=/1200x0/filters:no_upscale()/https://dotesports-cdn-prod-tqgiyve.stackpathdns.com/article/a4d5534c-f920-455e-a9e3-031fa52d1ba4.jpg" alt="Mountains" width="600" height="400">
 		    </a>
- 		   <div class="desc">Minecraft</div>
+ 		   <div class="desc">League of Legends</div>
 		  </div>
 		</div>    
 	</body>
