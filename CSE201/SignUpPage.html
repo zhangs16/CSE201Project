@@ -10,57 +10,41 @@
         
     </div>
     
-    <!-- Create user sign up input fields and sign up/cancel button -->
+    <!-- Create user sign up input fields and sign up/reset button -->
     <div class="container">
         
         <!-- <form action="/our_database.php" target="_self"> -->
 
         <form>
         
-            <div>
-                <label for="firstname"><b>First Name</b></label>
-                <input type="text" placeholder="First Name" name="firstname" required>
-            </div>    
-        
-            <div>
-                <label for="lastname"><b>Last Name</b></label>
-                <input type="text" placeholder="Last Name" name="lastname" required>
-            </div>
-                
-            <div>
-                <label for="email"><b>Email</b></label>
-                <input type="email" placeholder="Email" name="email" required>
-            </div>
-            
-            <div>
-                <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Desired Username" name="username" required>
-            </div>
-                
-            <div>
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Password" name="password" required>
-            </div>
-            
-            <div>
-                <label for="confirm-password"><b>Confirm Password</b></label>
-                <input type="password" placeholder="Confirm Password" name="confirm-password" required>
-            </div>
-            
-            <div>
-                <label for="birthday"><b>Date of Birth (13+)</b></label>
-                <input type="date" name="birthday" min='1900-01-01' max='2005-04-09' required>
-            </div>
-            
-            <div>
-                <label for="Gender"><b>Gender</b></label>
-                <input type="radio" id="Male" name="Gender" value="Male" required><label for="Male">Male</label>
-                <input type="radio" id="Female" name="Gender" value="Female" required><label for="Female">Female</label>
-                <input type="radio" id="Other" name="Gender" value="Other" required><label for="Other">Other</label>
-            </div>
-                
+            <label for="firstname"><b>First Name</b></label>
+            <input type="text" placeholder="First Name" name="firstname" required>
+                    
+            <label for="lastname"><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" name="lastname" required>
+                        
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Email" name="email" required>
+                    
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Desired Username" name="username" required>
+                            
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="password" required>
+                    
+            <label for="confirm-password"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+                        
+            <label for="birthday"><b>Date of Birth (13+)</b></label>
+            <input type="date" name="birthday" min='1900-01-01' max='2005-04-09' required>
+                        
+            <label for="Gender"><b>Gender</b></label>
+            <input type="radio" id="Male" name="Gender" value="Male" required><label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female" required><label for="Female">Female</label>
+            <input type="radio" id="Other" name="Gender" value="Other" required><label for="Other">Other</label>
+                            
             <div class="clearfix">
-                <button type="submit" class="cancel-button" formnovalidate>Cancel</button>
+                <button type="reset" class="reset-button" formnovalidate>Reset</button>
                 <button type="submit" class="signup-button">Sign Up</button> 
             </div>
             
@@ -75,15 +59,16 @@
         input[type=text], input[type=password], input[type=email], input[type=date] {
             width: 100%;
             padding: 15px;
-            margin: 5px 0 22px 0;
+            margin: 5px auto 20px;
             display: block;
             border: none;
             background: #f1f1f1;
+            font-family: sans-serif;
             }
         
         /* Changes font inside date input field */
-        input[type=date] {
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        input[type=date], input[type=text], input[type=password], type= {
+            font-family: sans-serif;
         }
 
         /* Changes color of the input field when clicked on */
@@ -92,15 +77,15 @@
             outline: none;
             }
         
-        /* Position and style of the sign up/cancel buttons */
+        /* Position and style of the sign up/reset buttons */
         button {
-            background-color: #f1f1f1;
-            color: black;
-            padding: 14px 20px;
-            margin 8px 0;
-            border: none;
-            width: 35%;
-            opacity: 0.9;
+            width: 100%;
+            background: none;
+            border: 2px solid;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
         }
         
         /* Changes opacity when hovering over buttons */
@@ -126,10 +111,14 @@
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
         
-        /* Position of the cancel/signup button */
-        .cancel-button, .signup-button {
+        /* Size of the reset/signup button */
+        .reset-button, .signup-button {
             float: none;
             width: 20%;
+        }
+        
+        label {
+            font-family: sans-serif;
         }
         
         .clearfix {
