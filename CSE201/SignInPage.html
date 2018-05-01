@@ -11,19 +11,21 @@
     <!-- Create header text and sign in boxes -->
     <body>
         <div class="signin">
+            <form action="LogIn.php" method="post">
             <h1>Enter your username and password</h1>
             <div class="textbox">
-                <input type="text" placeholder="Username" name="" value="">
+                <input type="text" placeholder="Username" name="username" value="">
             </div>
             
             <div class="textbox">
-                <input type="password" placeholder="Password" name="" value="">
+                <input type="password" placeholder="Password" name="password" value="">
             </div>
             
-            <input class="button" type="button" name="" value="Sign In">
+            <input class="button" type="submit" name="" value="Sign In">
             <a href="SignUpPage.html">    
                 <input class="button" type="button" name="" value="Sign Up"> 
-            </a>    
+            </a> 
+            </form>
         </div>
     </body>
     
