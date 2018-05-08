@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
     die;
 } else {
     $conn->close();
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Cannot find that username or the passwaord does not match the username";
     header('Refresh:3,Url=SignInPage.html');
     die;
 }

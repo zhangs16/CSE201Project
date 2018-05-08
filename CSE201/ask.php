@@ -13,20 +13,19 @@ if ($conn->connect_error) {
     die("Fail to connect to database:" . $conn->connect_error);
 }
 
-$email = $_POST['email'];
+$description = $_POST['question'];
 
-$username = $_POST['username'];
+$date = date("Y-m-d");
 
-$password = $_POST['password'];
+$title = $_POST['title'];
 
-$birthday = $_POST['birthday'];
 
-$sql = "INSERT INTO Users (email, username, pswd, bdate) VALUES ('$email', '$username', '$password', '$birthday')";
+$sql = "INSERT INTO Question (q_description, q_date, q_title) VALUES ('$description', '$date', '$title')";
 
 if ($conn->query($sql) === TRUE) {
     $conn->close();
     echo "Adding into database successfully.";
-    header('Refresh:3,Url=SignInPage.html');
+    header('Refresh:3,Url=HomePage.html');
     die;
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
